@@ -15,16 +15,7 @@ void Controller :: start()
     cout << "Testing the Timer class" << endl;
     Timer codeTimer;
     codeTimer.startTimer();
-    cout << "Print some text to the screen" << endl;
+    vector<CrimeData> myData = FileController :: readCrimeDataToVector("/Users/zyls7153/Downloads/crime.csv");
     codeTimer.stopTimer();
     codeTimer.displayInformation();
-    
-    codeTimer.resetTimer();
-//    codeTimer.startTimer();
-//    for (int index = 0; index < 10000; index ++)
-//    {
-//        cout << "The index is " << index << "\t";
-//    }
-//    codeTimer.stopTimer();
-//    codeTimer.displayInformation();
 }
