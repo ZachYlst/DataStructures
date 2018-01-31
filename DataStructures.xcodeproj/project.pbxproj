@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A6151D1A20220B7E00F5CE82 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A6151D1920220B7E00F5CE82 /* main.cpp */; };
+		A6151D2320220BEB00F5CE82 /* Controller.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A6151D2120220BEB00F5CE82 /* Controller.cpp */; };
+		A6151D2520220BF500F5CE82 /* Runner.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A6151D2420220BF500F5CE82 /* Runner.cpp */; };
+		A6151D2820220C7300F5CE82 /* FileController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A6151D2620220C7300F5CE82 /* FileController.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,7 +26,11 @@
 
 /* Begin PBXFileReference section */
 		A6151D1620220B7E00F5CE82 /* DataStructures */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DataStructures; sourceTree = BUILT_PRODUCTS_DIR; };
-		A6151D1920220B7E00F5CE82 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		A6151D2120220BEB00F5CE82 /* Controller.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Controller.cpp; sourceTree = "<group>"; };
+		A6151D2220220BEB00F5CE82 /* Controller.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Controller.hpp; sourceTree = "<group>"; };
+		A6151D2420220BF500F5CE82 /* Runner.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Runner.cpp; sourceTree = "<group>"; };
+		A6151D2620220C7300F5CE82 /* FileController.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = FileController.cpp; sourceTree = "<group>"; };
+		A6151D2720220C7300F5CE82 /* FileController.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = FileController.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +48,7 @@
 			isa = PBXGroup;
 			children = (
 				A6151D1820220B7E00F5CE82 /* DataStructures */,
+				A6151D2E20220D1100F5CE82 /* Testing */,
 				A6151D1720220B7E00F5CE82 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -57,9 +64,60 @@
 		A6151D1820220B7E00F5CE82 /* DataStructures */ = {
 			isa = PBXGroup;
 			children = (
-				A6151D1920220B7E00F5CE82 /* main.cpp */,
+				A6151D2420220BF500F5CE82 /* Runner.cpp */,
+				A6151D2C20220CB100F5CE82 /* Diagrams */,
+				A6151D2A20220C9900F5CE82 /* Data */,
+				A6151D2020220BDB00F5CE82 /* Controller */,
+				A6151D2D20220CC800F5CE82 /* Model */,
 			);
 			path = DataStructures;
+			sourceTree = "<group>";
+		};
+		A6151D2020220BDB00F5CE82 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A6151D2920220C8600F5CE82 /* Tools */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A6151D2920220C8600F5CE82 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				A6151D2620220C7300F5CE82 /* FileController.cpp */,
+				A6151D2720220C7300F5CE82 /* FileController.hpp */,
+				A6151D2120220BEB00F5CE82 /* Controller.cpp */,
+				A6151D2220220BEB00F5CE82 /* Controller.hpp */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		A6151D2A20220C9900F5CE82 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		A6151D2C20220CB100F5CE82 /* Diagrams */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Diagrams;
+			sourceTree = "<group>";
+		};
+		A6151D2D20220CC800F5CE82 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A6151D2E20220D1100F5CE82 /* Testing */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Testing;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -119,7 +177,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A6151D1A20220B7E00F5CE82 /* main.cpp in Sources */,
+				A6151D2320220BEB00F5CE82 /* Controller.cpp in Sources */,
+				A6151D2520220BF500F5CE82 /* Runner.cpp in Sources */,
+				A6151D2820220C7300F5CE82 /* FileController.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
