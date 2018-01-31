@@ -79,6 +79,10 @@
 		A6151D2020220BDB00F5CE82 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				A6151D2620220C7300F5CE82 /* FileController.cpp */,
+				A6151D2720220C7300F5CE82 /* FileController.hpp */,
+				A6151D2120220BEB00F5CE82 /* Controller.cpp */,
+				A6151D2220220BEB00F5CE82 /* Controller.hpp */,
 				A6151D2920220C8600F5CE82 /* Tools */,
 			);
 			path = Controller;
@@ -87,10 +91,6 @@
 		A6151D2920220C8600F5CE82 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
-				A6151D2620220C7300F5CE82 /* FileController.cpp */,
-				A6151D2720220C7300F5CE82 /* FileController.hpp */,
-				A6151D2120220BEB00F5CE82 /* Controller.cpp */,
-				A6151D2220220BEB00F5CE82 /* Controller.hpp */,
 				A6151D2F20220EB600F5CE82 /* Timer.cpp */,
 				A6151D3020220EB600F5CE82 /* Timer.hpp */,
 			);
