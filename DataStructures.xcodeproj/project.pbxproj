@@ -10,6 +10,7 @@
 		A6151D2320220BEB00F5CE82 /* Controller.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A6151D2120220BEB00F5CE82 /* Controller.cpp */; };
 		A6151D2520220BF500F5CE82 /* Runner.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A6151D2420220BF500F5CE82 /* Runner.cpp */; };
 		A6151D2820220C7300F5CE82 /* FileController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A6151D2620220C7300F5CE82 /* FileController.cpp */; };
+		A6151D3120220EB600F5CE82 /* Timer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A6151D2F20220EB600F5CE82 /* Timer.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +32,8 @@
 		A6151D2420220BF500F5CE82 /* Runner.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Runner.cpp; sourceTree = "<group>"; };
 		A6151D2620220C7300F5CE82 /* FileController.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = FileController.cpp; sourceTree = "<group>"; };
 		A6151D2720220C7300F5CE82 /* FileController.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = FileController.hpp; sourceTree = "<group>"; };
+		A6151D2F20220EB600F5CE82 /* Timer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Timer.cpp; sourceTree = "<group>"; };
+		A6151D3020220EB600F5CE82 /* Timer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Timer.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +91,8 @@
 				A6151D2720220C7300F5CE82 /* FileController.hpp */,
 				A6151D2120220BEB00F5CE82 /* Controller.cpp */,
 				A6151D2220220BEB00F5CE82 /* Controller.hpp */,
+				A6151D2F20220EB600F5CE82 /* Timer.cpp */,
+				A6151D3020220EB600F5CE82 /* Timer.hpp */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -180,6 +185,7 @@
 				A6151D2320220BEB00F5CE82 /* Controller.cpp in Sources */,
 				A6151D2520220BF500F5CE82 /* Runner.cpp in Sources */,
 				A6151D2820220C7300F5CE82 /* FileController.cpp in Sources */,
+				A6151D3120220EB600F5CE82 /* Timer.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
