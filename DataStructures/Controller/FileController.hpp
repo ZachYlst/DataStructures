@@ -23,6 +23,6 @@ class FileController
 {
 public:
     static vector<CrimeData> readCrimeDataToVector(string filename);
-}
+};
 
 #endif /* FileController_hpp */
