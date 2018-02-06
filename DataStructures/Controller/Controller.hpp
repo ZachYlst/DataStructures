@@ -14,6 +14,7 @@
 #include <iostream>
 #include <vector>
 #include "../Model/Structures/Array.hpp"
+#include "../Testers/ArrayTester.hpp"
 
 class Controller
 {

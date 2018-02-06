@@ -121,7 +121,9 @@ void Array<Type> :: setAtIndex(int pos, Type item)
 template <class Type>
 Array<Type> :: ~Array()
 {
+    cout << "About to delete the structure" << endl;
     delete[] internalArray;
+    cout << "Internal array deleted" << endl;
 }
 
 #endif /* Array_hpp */
