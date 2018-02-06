@@ -13,6 +13,7 @@
 #include "FileController.hpp"
 #include <iostream>
 #include <vector>
+#include "../Model/Structures/Array.hpp"
 
 class Controller
 {
