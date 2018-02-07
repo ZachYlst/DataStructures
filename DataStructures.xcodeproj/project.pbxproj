@@ -43,6 +43,7 @@
 		A632B2FC202A001C00DAA248 /* ArrayTester.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ArrayTester.cpp; sourceTree = "<group>"; };
 		A632B2FD202A001C00DAA248 /* ArrayTester.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ArrayTester.hpp; sourceTree = "<group>"; };
 		A632B300202A126D00DAA248 /* Node.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Node.hpp; sourceTree = "<group>"; };
+		A632B303202A141F00DAA248 /* LinearNode.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LinearNode.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +153,7 @@
 			isa = PBXGroup;
 			children = (
 				A632B300202A126D00DAA248 /* Node.hpp */,
+				A632B303202A141F00DAA248 /* LinearNode.hpp */,
 			);
 			path = Nodes;
 			sourceTree = "<group>";
