@@ -45,6 +45,8 @@
 		A632B300202A126D00DAA248 /* Node.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Node.hpp; sourceTree = "<group>"; };
 		A632B303202A141F00DAA248 /* LinearNode.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LinearNode.hpp; sourceTree = "<group>"; };
 		A655BB2C20348CD600F50825 /* LinkedList.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LinkedList.hpp; sourceTree = "<group>"; };
+		A655BB2F2034950F00F50825 /* LinkedListTester.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LinkedListTester.hpp; sourceTree = "<group>"; };
+		A655BB3120349A6500F50825 /* List.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = List.hpp; path = ../../../../../../Desktop/List.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +140,7 @@
 		A6151D2E20220D1100F5CE82 /* Testing */ = {
 			isa = PBXGroup;
 			children = (
+				A655BB2F2034950F00F50825 /* LinkedListTester.hpp */,
 			);
 			path = Testing;
 			sourceTree = "<group>";
@@ -146,6 +149,7 @@
 			isa = PBXGroup;
 			children = (
 				A62D68B22024BEAF0070F37A /* Array.hpp */,
+				A655BB3120349A6500F50825 /* List.hpp */,
 			);
 			path = Structures;
 			sourceTree = "<group>";
