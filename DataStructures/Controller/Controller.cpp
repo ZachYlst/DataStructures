@@ -7,6 +7,7 @@
 //
 
 #include "Controller.hpp"
+#include "LinkedListTester.hpp"
 
 using namespace std;
 
@@ -15,8 +16,6 @@ void Controller :: start()
     ArrayTester myTest;
     myTest.testArrayUse();
     myTest.testAdvancedArray();
-    
-    //findMaxAndMin();
 }
 
 void Controller :: findMaxAndMin()

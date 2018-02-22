@@ -42,6 +42,8 @@ private:
     int year;
     
 public:
+    CrimeData();
+    
     CrimeData(string dataLine);
     
     string getDepartment() const;

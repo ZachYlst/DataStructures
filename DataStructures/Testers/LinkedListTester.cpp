@@ -1,26 +1,12 @@
 //
-//  LinkedListTester.hpp
+//  LinkedListTester.cpp
 //  DataStructures
 //
-//  Created by Ylst, Zachary on 2/14/18.
+//  Created by Ylst, Zachary on 2/20/18.
 //  Copyright © 2018 CTEC. All rights reserved.
 //
 
-#ifndef LinkedListTester_hpp
-#define LinkedListTester_hpp
-
-#include "../Model/Structures/Linear/LinkedList.hpp"
-#include "../Controller/FileController.hpp"
-#include "../Controller/Tools/Timer.hpp"
-#include "../Data/CrimeData.hpp"
-#include <iostream>
-
-class LinkedListTester
-{
-public:
-    void testListBasics();
-    void testListWithData();
-};
+#include "LinkedListTester.hpp"
 
 void LinkedListTester :: testListBasics()
 {
@@ -57,21 +43,19 @@ void LinkedListTester :: testListWithData()
 {
     Timer ListTimer;
     
-    ListTimer.startTime();
+    ListTimer.startTimer();
     LinkedList<CrimeData> crimes = FileController :: readDataToList("/Users/zyls7153/Documents/Data Structures/DataStructures/DataStructures/Data/crime.csv");
-    listTimer.stopTimer();
+    ListTimer.stopTimer();
     cout << "This is how long it takes to read the structure into our custom data structure" << endl;
-    listTimer.displayInformation();
+    ListTimer.displayInformation();
     
-    listTimer.resetTimer();
+    ListTimer.resetTimer();
     cout << "Here is how long it takes to access a random data value" << endl;
-    listTimer.startTimer();
+    ListTimer.startTimer();
     int randomLocation = (rand() * rand()) % crimes.getSize();
     cout << "The random index is " << randomLocation << endl;
-    double totalViolenceRate = crimes.getFromIndex(randomLocation).getAllViolenceRates();
-    listTimer.stopTimer();
+    double totalViolenceRate = crimes.getFromIndex(randomLocation).getAllViolentRates();
+    ListTimer.stopTimer();
     cout << "The random crime stat is: " << totalViolenceRate << " , and here is the time" << endl;
-    listTimer.displayInformation();
+    ListTimer.displayInformation();
 }
-
-#endif /* LinkedListTester_hpp */

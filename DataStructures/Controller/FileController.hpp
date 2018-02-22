@@ -10,7 +10,8 @@
 #define FileController_hpp
 
 #include "../Data/CrimeData.hpp"
-#include "LinkedList.hpp"
+#include "../Model/Structures/Linear/LinkedList.hpp"
+
 
 #include <string>
 #include <fstream>
@@ -26,6 +27,7 @@ public:
     static vector<CrimeData> readCrimeDataToVector(string filename);
     static LinkedList<CrimeData> readDataToList(string filename);
 };
+
 
 LinkedList<CrimeData> FileController :: readDataToList(string filename)
 {

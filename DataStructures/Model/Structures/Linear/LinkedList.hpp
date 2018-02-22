@@ -31,14 +31,15 @@ public:
     LinearNode<Type> * getEnd();
     
     //Structure Methods
-    void add(Type item);
-    void addAtIndex(int index, Type item);
-    Type getFromIndex(int index);
-    Type remove(int index);
+    virtual void add(Type item);
+    virtual void addAtIndex(int index, Type item);
+    virtual Type getFromIndex(int index);
+    virtual Type remove(int index);
 //    Type setAtIndex(int index, Type item);
 //    bool contains(Type item);
 };
 
+template <class Type>
 LinkedList<Type> :: LinkedList()
 {
     this->front = nullptr;
@@ -46,17 +47,19 @@ LinkedList<Type> :: LinkedList()
     this->size = 0;
 }
 
+template <class Type>
 LinkedList<Type> :: ~LinkedList()
 {
     LinearNode<Type> * destroyStructure = front;
     while (front != nullptr)
     {
-        front = deatroyStructure->getNextNode();
+        front = destroyStructure->getNextNode();
         delete destroyStructure;
         destroyStructure = front;
     }
 }
 
+template <class Type>
 void LinkedList<Type> :: add(Type item)
 {
     LinearNode<Type> * newData = new LinearNode<Type>(item);
@@ -75,6 +78,7 @@ void LinkedList<Type> :: add(Type item)
     this->size += 1;
 }
 
+template <class Type>
 void LinkedList<Type> :: addAtIndex(int index, Type item)
 {
     assert(index >= 0 && index <= this->size);
@@ -100,12 +104,13 @@ void LinkedList<Type> :: addAtIndex(int index, Type item)
                 current = current->getNextNode();
             }
             previous->setNextNode(toBeAdded);
-            toBeAdded->setNextNode(current);
+            toBeAdded->setNextNode(current);
         }
         this->size++;
     }
 }
 
+template <class Type>
 Type LinkedList<Type> :: remove(int index)
 {
     assert(index >= 0 && index < this->size);
@@ -149,16 +154,19 @@ Type LinkedList<Type> :: remove(int index)
     return removedData;
 }
 
+template <class Type>
 LinearNode<Type> * LinkedList<Type> :: getEnd()
 {
     return this->end;
 }
 
+template <class Type>
 LinearNode<Type> * LinkedList<Type> :: getFront()
 {
     return this->front;
 }
 
+template <class Type>
 int LinkedList<Type> :: getSize() const
 {
     return this->size;

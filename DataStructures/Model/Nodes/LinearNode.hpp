@@ -11,6 +11,7 @@
 
 #include <iostream>
 #include "Node.hpp"
+#include "../Structures/Linear/List.hpp"
 
 template <class Type>
 class LinearNode : public Node<Type>
