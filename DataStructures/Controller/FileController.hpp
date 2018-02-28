@@ -12,7 +12,6 @@
 #include "../Data/CrimeData.hpp"
 #include "../Model/Structures/Linear/LinkedList.hpp"
 
-
 #include <string>
 #include <fstream>
 #include <iostream>
@@ -28,16 +27,15 @@ public:
     static LinkedList<CrimeData> readDataToList(string filename);
 };
 
-
 LinkedList<CrimeData> FileController :: readDataToList(string filename)
 {
     LinkedList<CrimeData> crimes;
-    
+
     string currentCSVLine;
     int rowCount = 0;
-    
+
     ifstream dataFile(filename);
-    
+
     if (dataFile.is_open())
     {
         while (!dataFile.eof())
@@ -59,7 +57,7 @@ LinkedList<CrimeData> FileController :: readDataToList(string filename)
     {
         cerr << "NO FILE" << endl;
     }
-    
+
     return crimes;
 }
 
