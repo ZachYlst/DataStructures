@@ -14,6 +14,7 @@
 		A62D68B02024B86F0070F37A /* CrimeData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A62D68AD2024B86F0070F37A /* CrimeData.cpp */; };
 		A632B2FE202A001C00DAA248 /* ArrayTester.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A632B2FC202A001C00DAA248 /* ArrayTester.cpp */; };
 		A6A64990203C82560027325E /* LinkedListTester.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A6A6498F203C82560027325E /* LinkedListTester.cpp */; };
+		A6DBD97820470DAB00A943C8 /* TestingStacksAndQueues.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A6DBD97620470DAB00A943C8 /* TestingStacksAndQueues.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -53,6 +54,8 @@
 		A69C7EA7203F194400CC2FC9 /* DoubleNode.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = DoubleNode.hpp; sourceTree = "<group>"; };
 		A6A6498E203C81BE0027325E /* List.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = List.hpp; sourceTree = "<group>"; };
 		A6A6498F203C82560027325E /* LinkedListTester.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = LinkedListTester.cpp; sourceTree = "<group>"; };
+		A6DBD97620470DAB00A943C8 /* TestingStacksAndQueues.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = TestingStacksAndQueues.cpp; sourceTree = "<group>"; };
+		A6DBD97720470DAB00A943C8 /* TestingStacksAndQueues.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = TestingStacksAndQueues.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,6 +171,8 @@
 				A655BB2F2034950F00F50825 /* LinkedListTester.hpp */,
 				A632B2FC202A001C00DAA248 /* ArrayTester.cpp */,
 				A632B2FD202A001C00DAA248 /* ArrayTester.hpp */,
+				A6DBD97620470DAB00A943C8 /* TestingStacksAndQueues.cpp */,
+				A6DBD97720470DAB00A943C8 /* TestingStacksAndQueues.hpp */,
 			);
 			path = Testers;
 			sourceTree = "<group>";
@@ -254,6 +259,7 @@
 				A6151D2520220BF500F5CE82 /* Runner.cpp in Sources */,
 				A6151D2820220C7300F5CE82 /* FileController.cpp in Sources */,
 				A6A64990203C82560027325E /* LinkedListTester.cpp in Sources */,
+				A6DBD97820470DAB00A943C8 /* TestingStacksAndQueues.cpp in Sources */,
 				A632B2FE202A001C00DAA248 /* ArrayTester.cpp in Sources */,
 				A6151D3120220EB600F5CE82 /* Timer.cpp in Sources */,
 			);
