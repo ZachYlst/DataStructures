@@ -52,7 +52,7 @@ void Stack<Type> :: push(Type data)
     
     if(this->size == 0)
     {
-        this->end = add
+        this->end = add;
     }
     else
     {

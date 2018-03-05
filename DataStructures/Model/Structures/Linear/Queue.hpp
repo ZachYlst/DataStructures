@@ -23,7 +23,7 @@ public:
     
     //Queue methods
     void enqueue(Type data);
-    void dequeue();
+    Type dequeue();
     Type peek();
     void clear();
     
