@@ -82,7 +82,7 @@ Type Stack<Type> :: pop()
     assert (this->size > 0);
     Type removed = this->front->getData();
     
-    LinearNode<Type> * removedNode = this.getFront();
+    LinearNode<Type> * removedNode = this->getFront();
     this->front = removedNode->getNextNode();
     delete removedNode;
     

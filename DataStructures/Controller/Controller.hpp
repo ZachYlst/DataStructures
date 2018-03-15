@@ -9,12 +9,13 @@
 #ifndef Controller_hpp
 #define Controller_hpp
 
-#include "Tools/Timer.hpp"
-#include "FileController.hpp"
 #include <iostream>
 #include <vector>
+#include "Tools/Timer.hpp"
+#include "FileController.hpp"
 #include "../Model/Structures/Linear/Array.hpp"
 #include "../Testers/ArrayTester.hpp"
+#include "../Testers/RecursionTester.hpp"
 
 class Controller
 {

@@ -16,6 +16,7 @@
 		A6A64990203C82560027325E /* LinkedListTester.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A6A6498F203C82560027325E /* LinkedListTester.cpp */; };
 		A6DBD97820470DAB00A943C8 /* TestingStacksAndQueues.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A6DBD97620470DAB00A943C8 /* TestingStacksAndQueues.cpp */; };
 		A6E52444204D900800D9EFAC /* RecursionTester.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A6E52442204D900800D9EFAC /* RecursionTester.cpp */; };
+		A6EA42A1205AB42A003FA32F /* SortingTester.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A6EA429F205AB42A003FA32F /* SortingTester.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -59,6 +60,8 @@
 		A6DBD97720470DAB00A943C8 /* TestingStacksAndQueues.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = TestingStacksAndQueues.hpp; sourceTree = "<group>"; };
 		A6E52442204D900800D9EFAC /* RecursionTester.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = RecursionTester.cpp; sourceTree = "<group>"; };
 		A6E52443204D900800D9EFAC /* RecursionTester.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = RecursionTester.hpp; sourceTree = "<group>"; };
+		A6EA429F205AB42A003FA32F /* SortingTester.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SortingTester.cpp; sourceTree = "<group>"; };
+		A6EA42A0205AB42A003FA32F /* SortingTester.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = SortingTester.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,6 +181,8 @@
 				A6DBD97720470DAB00A943C8 /* TestingStacksAndQueues.hpp */,
 				A6E52442204D900800D9EFAC /* RecursionTester.cpp */,
 				A6E52443204D900800D9EFAC /* RecursionTester.hpp */,
+				A6EA429F205AB42A003FA32F /* SortingTester.cpp */,
+				A6EA42A0205AB42A003FA32F /* SortingTester.hpp */,
 			);
 			path = Testers;
 			sourceTree = "<group>";
@@ -264,6 +269,7 @@
 				A62D68B02024B86F0070F37A /* CrimeData.cpp in Sources */,
 				A6151D2520220BF500F5CE82 /* Runner.cpp in Sources */,
 				A6151D2820220C7300F5CE82 /* FileController.cpp in Sources */,
+				A6EA42A1205AB42A003FA32F /* SortingTester.cpp in Sources */,
 				A6A64990203C82560027325E /* LinkedListTester.cpp in Sources */,
 				A6DBD97820470DAB00A943C8 /* TestingStacksAndQueues.cpp in Sources */,
 				A632B2FE202A001C00DAA248 /* ArrayTester.cpp in Sources */,
