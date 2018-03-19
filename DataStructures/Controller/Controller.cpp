@@ -7,15 +7,15 @@
 //
 
 #include "Controller.hpp"
-#include "LinkedListTester.hpp"
+#include "../Testers/LinkedListTester.hpp"
+#include "../Testers/SortingTester.hpp"
 
 using namespace std;
 
 void Controller :: start()
 {    
-    LinkedListTester test;
-    test.testListBasics();
-    test.testListWithData();
+    SortingTester myTest;
+    myTest.testSorts();
 }
 
 void Controller :: findMaxAndMin()
