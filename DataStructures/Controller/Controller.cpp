@@ -14,8 +14,8 @@ using namespace std;
 
 void Controller :: start()
 {    
-    SortingTester myTest;
-    myTest.testSorts();
+    LinkedListTester myTest;
+    myTest.testListWithData();
 }
 
 void Controller :: findMaxAndMin()
