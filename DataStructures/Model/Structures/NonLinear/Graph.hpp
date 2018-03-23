@@ -18,14 +18,14 @@ template <class Type>
 class Graph
 {
 private:
-    static const int MAXIMUM = 20;
+    static const int MAXIMUM = 50;
     bool adjacencyMatrix [MAXIMUM][MAXIMUM];
     int weightCostMatrix [MAXIMUM][MAXIMUM];
     Type graphData [MAXIMUM];
     int vertexCount;
-    void depthFirstTransversal(Graph<Type> & graph, int vertex, bool markedVertices[]);
+    void depthFirstTraversal(Graph<Type> & graph, int vertex, bool markedVertices[]);
 public:
-    graph();
+    Graph();
     //Graph Operations
     
     void addVertex(const Type& value);
@@ -50,10 +50,10 @@ public:
     bool areConnected(int source, int target) const;
     std :: set<int> neighbors(int vetex) const;
     
-    //Transversals
-    void depthFirstTransversal(Graph<Type> & graph, int vertex);
-    void breadthFirstTransversal(Graph<Type> & graph, int vertex);
-    int costTransversal(Graph<Type> & graph, int vertex);
+    //Traversals
+    void depthFirstTraversal(Graph<Type> & graph, int vertex);
+    void breadthFirstTraversal(Graph<Type> & graph, int vertex);
+    int costTraversal(Graph<Type> & graph, int vertex);
 };
 
 template <class Type>
@@ -104,14 +104,14 @@ void Graph<Type> :: addVertex(const Type& value)
     for (int otherVertexNumber = 0; otherVertexNumber < vertexCount; otherVertexNumber++)
     {
         adjacencyMatrix[otherVertexNumber][newVertexNumber] = false;
-        adjacencyMatrix[newVertexNumber][otherMatrixNumber] = false;
+        adjacencyMatrix[newVertexNumber][otherVertexNumber] = false;
     }
     
     graphData[newVertexNumber] = value;
 }
 
 template <class Type>
-void Graph<Type> :: removedEdge(int source, int target)
+void Graph<Type> :: removeEdge(int source, int target)
 {
     assert(source >= 0 && source < vertexCount && target >= 0 && target < vertexCount);
     adjacencyMatrix[source][target] = false;
@@ -181,7 +181,7 @@ bool Graph<Type> :: areConnected(int source, int target) const
 template <class Type>
 std :: set<int> Graph<Type> :: neighbors(int vertex) const
 {
-    assert(vertex < vertexCount)
+    assert(vertex < vertexCount);
     std :: set<int> vertexNeighbors;
     
     for (int index = 0; index < vertexCount; index++)
@@ -195,16 +195,16 @@ std :: set<int> Graph<Type> :: neighbors(int vertex) const
 }
 
 template <class Type>
-void Graph<Type> :: depthFirstTransversal(Graph<Type> & currentGraph, int vertex)
+void Graph<Type> :: depthFirstTraversal(Graph<Type> & currentGraph, int vertex)
 {
     bool visitedVertices[MAXIMUM];
     assert(vertex < currentGraph.size());
     std :: fill_n(visitedVertices, currentGraph.size(), false);
-    depthFirstTransversal(currentGraph, vertex, visitedVertices);
+    depthFirstTraversal(currentGraph, vertex, visitedVertices);
 }
 
 template <class Type>
-void Graph<Type> :: depthFirstTransversal(Graph<Type> & currentGraph, int vertex, bool * visited)
+void Graph<Type> :: depthFirstTraversal(Graph<Type> & currentGraph, int vertex, bool * visited)
 {
     std :: set<int> connections = currentGraph.neighbors(vertex);
     std :: set<int> :: iterator setIterator;
@@ -216,13 +216,13 @@ void Graph<Type> :: depthFirstTransversal(Graph<Type> & currentGraph, int vertex
     {
         if (!visited[*setIterator])
         {
-            depthFirstTransversal(currentGraph, *setIterator, visited);
+            depthFirstTraversal(currentGraph, *setIterator, visited);
         }
     }
 }
 
 template <class Type>
-void Graph<Type> :: breadthFirstTransversal(Graph<Type> & currentGraph, int vertex)
+void Graph<Type> :: breadthFirstTraversal(Graph<Type> & currentGraph, int vertex)
 {
     assert(vertex < currentGraph.size());
     bool visited[MAXIMUM];
@@ -230,7 +230,7 @@ void Graph<Type> :: breadthFirstTransversal(Graph<Type> & currentGraph, int vert
     std :: set<int> :: iterator setIterator;
     std :: queue<int> vertexQueue;
     
-    std :: fill_n(visitied, currentGraph.size(), false);
+    std :: fill_n(visited, currentGraph.size(), false);
     visited[vertex] = true;
     cout << currentGraph[vertex] << endl;
     vertexQueue.push(vertex);
@@ -254,7 +254,7 @@ void Graph<Type> :: breadthFirstTransversal(Graph<Type> & currentGraph, int vert
 template <class Type>
 int Graph<Type> :: costTraversal(Graph<Type> & currentGraph, int vertex)
 {
-    assert(vertex < currentGraph.size());
+    assert(start >= 0 && start < vertexCount);
     int cost = 0;
     bool visited[MAXIMUM];
     std :: set<int> connections;
