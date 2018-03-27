@@ -252,7 +252,7 @@ void Graph<Type> :: breadthFirstTraversal(Graph<Type> & currentGraph, int vertex
 }
 
 template <class Type>
-int Graph<Type> :: costTraversal(Graph<Type> & currentGraph, int vertex)
+int Graph<Type> :: costTraversal(Graph<Type> & currentGraph, int start)
 {
     assert(start >= 0 && start < vertexCount);
     int cost = 0;
@@ -262,19 +262,20 @@ int Graph<Type> :: costTraversal(Graph<Type> & currentGraph, int vertex)
     std :: queue<int> vertexQueue;
     
     std :: fill_n(visited, currentGraph.size(), false);
-    visited[vertex] = true;
+    visited[start] = true;
     
-    vertexQueue.push(vertex);
+    vertexQueue.push(start);
     while (!vertexQueue.empty())
     {
-        connections = currentGraph.neighbors(vertexQueue.front());
+        int currentIndex = vertexQueue.front();
+        connections = currentGraph.neighbors(currentIndex);
         vertexQueue.pop();
         
         for (setIterator = connections.begin(); setIterator != connections.end(); setIterator++)
         {
             if (!visited[*setIterator])
             {
-                cost += weightCostMatrix[vertex][*setIterator];
+                cost += weightCostMatrix[currentIndex][*setIterator];
                 visited[*setIterator] = true;
                 vertexQueue.push(*setIterator);
             }

@@ -9,13 +9,14 @@
 #include "Controller.hpp"
 #include "../Testers/LinkedListTester.hpp"
 #include "../Testers/SortingTester.hpp"
+#include "../Testers/GraphTester.hpp"
 
 using namespace std;
 
 void Controller :: start()
 {    
-    LinkedListTester myTest;
-    myTest.testListWithData();
+    GraphTester myTest;
+    myTest.testGraphs();
 }
 
 void Controller :: findMaxAndMin()
