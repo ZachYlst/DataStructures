@@ -10,13 +10,14 @@
 #include "../Testers/LinkedListTester.hpp"
 #include "../Testers/SortingTester.hpp"
 #include "../Testers/GraphTester.hpp"
+#include "../Testers/BinaryTreeTester.hpp"
 
 using namespace std;
 
 void Controller :: start()
 {    
-    GraphTester myTest;
-    myTest.testGraphs();
+    BinaryTreeTester test;
+    test.doTreeStuff();
 }
 
 void Controller :: findMaxAndMin()
