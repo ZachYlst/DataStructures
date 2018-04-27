@@ -9,7 +9,7 @@
 #ifndef N_AryTreeNode_hpp
 #define N_AryTreeNode_hpp
 
-#include <set>
+#include <vector>
 #include "Node.hpp"
 using namespace std;
 
@@ -17,7 +17,7 @@ tamplate <class Type>
 class N_AryTreeNode : public Node<Type>
 {
 private:
-    set<N_AryTreeNode<Type>*> nodes;
+    vector<N_AryTreeNode<Type>*> nodes;
     N_AryTreeNode<Type> * root;
     
 public:
@@ -25,7 +25,7 @@ public:
     ~N_AryTreeNode<Type>();
     N_AryTreeNode<Type>(Type data);
     
-    set<N_AryTreeNode<Type>*> getNodes();
+    vector<N_AryTreeNode<Type>*> getNodes();
     N_AryTreeNode<Type> * getRoot();
     int getChildCount();
     
@@ -58,7 +58,7 @@ N_AryTreeNode<Type> * N_AryTreeNode<Type> :: getRoot()
 }
 
 template <class Type>
-set<N_AryTreeNode<Type>*> N_AryTreeNode<Type> :: getNodes()
+vector<N_AryTreeNode<Type>*> N_AryTreeNode<Type> :: getNodes()
 {
     return nodes;
 }
